@@ -14,6 +14,9 @@
  * OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.
  */
 
+#define htc_start         ath9k_htc_start
+#define htc_stop          ath9k_htc_stop
+#define htc_connect_service ath9k_htc_connect_service
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
 #include "htc.h"
