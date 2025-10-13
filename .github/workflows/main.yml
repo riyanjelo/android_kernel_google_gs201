@@ -110,8 +110,8 @@ jobs:
         echo "CONFIG_CGROUP_BPF=y" >> arch/arm64/configs/${{ env.DEFCONFIG }}
         echo "CONFIG_CGROUP_PIDS=y" >> arch/arm64/configs/${{ env.DEFCONFIG }}
         echo "CONFIG_CPUSETS=y" >> arch/arm64/configs/${{ env.DEFCONFIG }}
-        echo "CONFIG_MEMCG=y" >> arch/arm64/configs/${{ env.DEFCONFIG }}
-        echo "CONFIG_MEMCG_SWAP=y" >> arch/arm64/configs/${{ env.DEFCONFIG }}
+        echo "CONFIG_SYSVIPC=y" >> arch/arm64/configs/${{ env.DEFCONFIG }}
+        echo "CONFIG_BINFMT_MISC=y" >> arch/arm64/configs/${{ env.DEFCONFIG }}
         echo "CONFIG_BLK_CGROUP=y" >> arch/arm64/configs/${{ env.DEFCONFIG }}
         echo "CONFIG_CGROUP_NET_PRIO=y" >> arch/arm64/configs/${{ env.DEFCONFIG }}
         echo "CONFIG_CGROUP_NET_CLASSID=y" >> arch/arm64/configs/${{ env.DEFCONFIG }}
