@@ -171,7 +171,6 @@ $(obj)/gki_module_protected.h: $(srctree)/android/abi_gki_modules_protected \
 				$(srctree)/scripts/gen_gki_modules_headers.sh
 	$(Q)$(CONFIG_SHELL) $(srctree)/scripts/gen_gki_modules_headers.sh $@ \
 	"$(srctree)"
-
 $(obj)/gki_module_exported.h: $(srctree)/android/abi_gki_modules_exports \
 				$(srctree)/scripts/gen_gki_modules_headers.sh
 	$(Q)$(CONFIG_SHELL) $(srctree)/scripts/gen_gki_modules_headers.sh $@ \
