@@ -102,6 +102,7 @@ jobs:
       run: |
         echo "⚙️ Enabling Docker configs..."
         echo "CONFIG_CGROUPS=y" >> arch/arm64/configs/${{ env.DEFCONFIG }}
+        echo "CONFIG_BT_HCIVHCI=y" >> arch/arm64/configs/${{ env.DEFCONFIG }}
         echo "CONFIG_CGROUP_FREEZER=y" >> arch/arm64/configs/${{ env.DEFCONFIG }}
         echo "CONFIG_CGROUP_DEVICE=y" >> arch/arm64/configs/${{ env.DEFCONFIG }}
         echo "CONFIG_CGROUP_CPUACCT=y" >> arch/arm64/configs/${{ env.DEFCONFIG }}
@@ -128,7 +129,7 @@ jobs:
         echo "CONFIG_NETLINK_DIAG=y" >> arch/arm64/configs/${{ env.DEFCONFIG }}  
         echo "CONFIG_FHANDLE=y" >> arch/arm64/configs/${{ env.DEFCONFIG }}  
         echo "CONFIG_NETFILTER_XT_TARGET_CHECKSUM=y" >> arch/arm64/configs/${{ env.DEFCONFIG }}  
-        echo "CONFIG_MEMCG=y" >> arch/arm64/configs/${{ env.DEFCONFIG }}
+        echo "CONFIG_BT_HCIBTUSB" >> arch/arm64/configs/${{ env.DEFCONFIG }}
         echo "CONFIG_IP6_NF_TARGET_MASQUERADE=y" >> arch/arm64/configs/${{ env.DEFCONFIG }}  
         echo "CONFIG_MACVLAN=y" >> arch/arm64/configs/${{ env.DEFCONFIG }}  
 
